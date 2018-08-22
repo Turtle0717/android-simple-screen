@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#eeeeaf" >
+
+    <ImageView
+        android:id="@+id/catview"
+        android:src="@drawable/catcafe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#eeeeaf">
+
+        <TextView
+            android:id="@+id/cafename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Victor's Cat Cafe"
+            android:textColor="#1555f5"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/rateus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Us: "
+            android:layout_toRightOf="@id/cafename"
+            android:layout_alignBottom="@id/cafename" />
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="5.0"
+            android:layout_alignBottom="@id/rateus"
+            android:layout_toRightOf="@id/rateus" />
+
+        <TextView
+            android:id="@+id/contactus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us: (829)327-4232"
+            android:layout_toRightOf="@id/cafename"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us!"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#00FF00"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_below="@id/aboutus"
+        android:text="Welcome, we are a new cat cafe open around the New York City area. We have 10 different cats for customers to interact with and a menu with loads of cat related dishes, drinks and deserts."
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Where You Can Find Us: 123 W 23th St, New York, NY 12020 "
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="                         Hours:
+        Monday - Friday: 12pm - 9pm
+        Saturday -11am - 10pm
+        Sunday - 11am - 6pm" />
+
+</LinearLayout >
+
